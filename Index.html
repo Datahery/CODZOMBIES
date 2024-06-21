@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty Zombies</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<body onclick="PlayAudio()">
+<img src="imagenes/logo.png" width="150" height="100" align="right"/>  
+<div class="bg"></div>
+ <div class="wrapper">
+<input type="checkbox" id="btn" hidden>
+<label for="btn" class="menu-btn">
+<i class="fas fa-bars"></i>
+<i class="fas fa-times"></i>
+</label>
+<nav id="sidebar">
+<div class="title">Zona Muerta</div>
+<ul class="list-items">
+<li><a href="Index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="WAW.html"><i class="fas fa-skull-crossbones"></i> World at War</a></li>
+            <li><a href="BO1.html"><i class="fas fa-skull"></i> Black Ops</a></li>
+            <li><a href="BO2.html"><i class="fas fa-brain"></i> Black Ops II</a></li>
+            <li><a href="BO3.html"><i class="fas fa-virus"></i> Black Ops III</a></li>
+            <li><a href="BO4.html"><i class="fas fa-radiation"></i> Black Ops IV</a></li>
+            <li><a href="CW.html"><i class="fas fa-snowflake"></i> Cold War</a></li>
+            <li><a href="Vanguard.html"><i class="fas fa-fire"></i> Vanguard</a></li>
+			<li><a href="Proximamente.html"><i class="fas fa-money-bill"></i> Proximamente</a></li>
+
+<div class="icons">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+</nav>
+</ul>
+</div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <center><h2>Bienvenido a la Zona de los No Muertos</h2>
+            <p>¡Prepárate para la batalla contra hordas de zombies!</p></center>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <center><h2>Sobre Call of Duty Zombies</h2></center>
+            <p>Call of Duty Zombies es un modo de juego cooperativo de la famosa franquicia Call of Duty, donde los jugadores luchan juntos contra oleadas de zombies en diversas ubicaciones y escenarios. Desde su debut, ha sido un favorito de los fans y ha evolucionado con cada nueva entrega de la serie.</p>
+        </div>
+    </section>
+
+    <section class="gameplay">
+        <div class="container">
+            <center><h2>Gameplay</h2></center>
+            <p>El objetivo principal en Call of Duty Zombies es sobrevivir el mayor tiempo posible contra oleadas de no muertos. Los jugadores pueden trabajar juntos para reparar barricadas, comprar armas y potenciadores, y desbloquear nuevas áreas mientras intentan alcanzar rondas más altas.</p>
+            <h3>Características del juego:</h3>
+            <ul>
+                <li>Modo cooperativo para hasta 4 jugadores.</li>
+                <li>Variedad de mapas con distintos diseños y desafíos.</li>
+                <li>Armas y potenciadores para ayudar en la lucha contra los zombies.</li>
+                <li>Sistema de progresión que desbloquea nuevas armas y habilidades.</li>
+                <li>Eventos especiales y modos de juego temporales.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <center><h2>Últimas Noticias</h2></center>
+            <div class="article">
+                <h3>Nuevo Mapa Revelado: Ciudad de los Condenados</h3>
+                <p>Descubre el último mapa DLC que te llevará a las calles infestadas de una ciudad abandonada, llena de secretos y peligros.</p>
+            </div>
+            <div class="article">
+                <h3>Actualización de Balance</h3>
+                <p>Se ha lanzado una nueva actualización de balance que ajusta armas, habilidades de personajes y más para mejorar la experiencia de juego.</p>
+            </div>
+        </div>
+    </section>
+	<audio id="musica" autoplay loop>
+	  <source src="audio/cronologia.mp3" type="audio/mpeg">
+	  <source src="audio/cronologia.ogg" type="audio/ogg">
+	  <p> tu navegador no soporta el elemento del audio</p>
+	</audio>
+	
+	
+	<script>
+	     function PlayAudio() {
+		 document.getElementById("musica").play();
+		 }
+	</script>
+</body>
+</html>
