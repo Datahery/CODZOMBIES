@@ -192,3 +192,23 @@ p {
 .title{
      font-family: 'Pieces NFI';
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
